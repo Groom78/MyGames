@@ -1,0 +1,59 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 8330 (ID=0x9832)
+    Vendor:   ATI
+    VRAM:     497 MB
+Default GameObject Tag: Silahlar already registered
+ 
+(Filename:  Line: 88)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\M3D_DLL.dll (this message is harmless)
+Loading C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\M3D_DLL.dll into Unity Child Domain
+Platform assembly: C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.258 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Havvaca\Desktop\Killer Game Setup1_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1a1c -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 16.611721 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1041.
+Total: 1.451337 ms (FindLiveObjects: 0.205184 ms CreateObjectMapping: 0.099172 ms MarkObjects: 0.876821 ms  DeleteObjects: 0.266739 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.034333 ms
+
+Unloading 506 unused Assets to reduce memory usage. Loaded Objects now: 397.
+Total: 4.755488 ms (FindLiveObjects: 0.253744 ms CreateObjectMapping: 0.097804 ms MarkObjects: 0.616920 ms  DeleteObjects: 3.784282 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.808357 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 409.
+Total: 0.809110 ms (FindLiveObjects: 0.071130 ms CreateObjectMapping: 0.045140 ms MarkObjects: 0.634019 ms  DeleteObjects: 0.056083 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.237261 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 409.
+Total: 0.813213 ms (FindLiveObjects: 0.038985 ms CreateObjectMapping: 0.044456 ms MarkObjects: 0.681211 ms  DeleteObjects: 0.046508 ms)
+
