@@ -23,8 +23,8 @@ void son_gelenler(){
         return;
     }
     if(renkarda_cnt>0 and easter_arda){
-        cout << renkarda_cnt << " defa RENK ARDA yapıldı" << nl;
-        cout << ucnt << " defa ULTRA MEGA RENK ARDA yapıldı" << nl;
+        cout << renkarda_cnt << " defa RENK yapıldı" << nl;
+        cout << ucnt << " defa ULTRA MEGA RENK yapıldı" << nl;
         
     }
     if(lasts.size()>20){
@@ -55,7 +55,7 @@ void prec(){
 
 void kp(int& budget){
     if(budget){
-        cout << "Daha batmadin aq" << nl;
+        cout << "Henuz batmadiniz" << nl;
         waitfor;
         return;
     }
@@ -66,11 +66,11 @@ void kp(int& budget){
     }
     kpcnt++;
     if(kpcnt == 2 and ucnt>0){
-        cout <<"ULTRA MEGA RENK ARDA!!! Tek seferlik fazladan %100 bonus hakkiniz bulundu" << nl;
+        cout <<"ULTRA MEGA RENK!!! Tek seferlik fazladan %100 bonus hakkiniz bulundu" << nl;
         budget += initial_budget;
     }
     else if(kpcnt==2){
-        cout <<"Renk Ardanin hatrina tek seferlik fazladan %50 bonus hakkiniz bulundu" << nl;
+        cout <<"Tek seferlik fazladan %50 bonus hakkiniz bulundu" << nl;
         budget += initial_budget/2;
     }
     else budget += initial_budget/4;
@@ -266,21 +266,21 @@ void play(int& budget){
         }
         if(x==-18){
             if(easter_arda==0){
-                cout << "Demek biliyosun, RENK ARDA easter egg aktif xd" << nl;
+                cout << "Demek biliyosun, RENK easter egg aktif xd" << nl;
                 easter_arda=1;
             }
             else if(easter_arda==1){
-                cout << "RENK ARDA easter egg inaktif :(" << nl;
+                cout << "RENK easter egg inaktif :(" << nl;
                 easter_arda=0;
             }
         }
         if(x==-19){
             if(easter_egg==0){
-                cout << "Demek biliyosun, Ceylin easter egg aktif xd" << nl;
+                cout << "Demek biliyosun, ULTRA easter egg aktif xd" << nl;
                 easter_egg=1;
             }
             else if(easter_egg==1){
-                cout << "Ceylin easter egg inaktif :(" << nl;
+                cout << "ULTRA easter egg inaktif :(" << nl;
                 easter_egg=0;
             }
         }
@@ -297,7 +297,7 @@ void play(int& budget){
         }
     }
     if(curbet>budget){
-        cout << "Parandan daha fazla bahis oynama aw mal misin" << nl;
+        cout << "Paranizdan daha fazla bahis oynamayin" << nl;
         play(budget);
         return;
     }
@@ -312,10 +312,6 @@ void play(int& budget){
     int sayi = rs();
     cout << "Gelen sayi: " << sayi <<" ";
     cout << renkof[sayi];
-    if(sayi==15)cout << " (Cagatay)";
-    if(sayi==18)cout << " (Arda)";
-    if(sayi==19)cout << " (Ceylin <3)";
-    if(sayi==23)cout << " (Enes)";
     cout<< nl;
     if(curbet==0){
         cout << "Eli bos gectiniz" << nl;
@@ -328,10 +324,10 @@ void play(int& budget){
     }
     else cout << bet[sayi]*((double)36) << "$ kazandiniz" << nl;
     if(sayi == 19 and bet[19]==0 and easter_egg){
-        cout << "Neden 19 basmadin mal" << nl;
+        cout << "Neden 19 basmadiniz?" << nl;
     }
     else if(sayi == 19 and bet[19] and easter_egg){
-        cout << "Ceylin Easter egg sayesinde fazladan " << bet[sayi]*((double)36) <<"$ kazandiniz wp" << nl;
+        cout << "ULTRA Easter egg sayesinde fazladan " << bet[sayi]*((double)36) <<"$ kazandiniz wp" << nl;
         budget += bet[sayi]*((double)36);
     }
     renkarda=1;
@@ -354,7 +350,7 @@ void play(int& budget){
         if(renkarda_cnt>=3 or ucnt){
             kpmax=2;
         }
-        cout << "RENK ARDAAA" << nl;
+        cout << "RENKKK" << nl;
     }
     
     for(int i=0;i<=36;i++)prev_bet[i]=bet[i];
@@ -372,7 +368,7 @@ void solve(){
     cout << "Bakiye Giriniz($): ";
     cin >> budget;
     if(budget<=0){
-        cout << "Aynen mq keli bi akıllı sensin" << nl;
+        cout << "Negatif Bakiye girdiniz" << nl;
         waitfor;
         return;
     }
@@ -389,12 +385,10 @@ void solve(){
             cout << "(Eger yesil 0 ve kayip bonusu hesaba dahil edilmezse)" << nl;
         }
         cout << nl << budget <<"$ ile oyundan ayrildiniz." << nl;
-        cout <<"Gule gule gotunuze sokun." << nl;
-        cout <<"Makineciler hicbir seyi hak etmiyor bu arada..." << nl; 
+        cout <<"Gule gule kullanın." << nl;
     }
     else{
-        cout << nl <<"Battiniz efendim xd" << nl;
-        cout << "Her zaman kumari oynatan kazanir Kilic" << nl;
+        cout << nl <<"Battiniz..." << nl;
     }
     waitfor;
     return;
@@ -433,7 +427,7 @@ void guide(){
     cout << nl << "Masadaki sayilar sirasiyla: " << nl;
     cout << "0,32,15,19,4,21,2,25,17,34,6,27,13,36,11,30,8,23,10,5,24,16,33,1,20,14,31,9,22,18,29,7,28,12,35,3,26" << nl << nl;
     cout << "Sayi basmak istiyorsaniz: " << nl;
-    cout << "1 19 23 (19'a 23$ oynar (Ceylin <3 Enes))" << nl;
+    cout << "1 19 23 (19'a 23$ oynar)" << nl;
     cout << "Bundan sonraki satirlarda 'x' degeri bahsinizi temsil etmektedir." << nl;
     cout << "Renk basmak istiyorsaniz:" << nl;
     cout << "2 1 x (kirmizi), 2 2 x (siyah)" << nl;
@@ -459,17 +453,11 @@ void guide(){
     cout << "Bahis icin negatif sayilar yazarsaniz bi sayidaki bahsinizin o kadarini geri cekersiniz" << nl;
     cout << "Hem kirmizi, hem siyaha basmak gibi normalde kabul edilmeyen bahisler serbesttir, sonucta rulet daima kaybettirir" << nl;
     cout << "Tum bahisleri ayrı satırlara yazip, son satıra yalnızca -1 yazmalisiniz" << nl;
-    cout << "Eli bos gecmek istiyorsaniz sadece -1 yazabilirsiniz. Mal olmayin." << nl;
+    cout << "Eli bos gecmek istiyorsaniz sadece -1 yazabilirsiniz." << nl;
     cout << "Son elleri goruntulemek icin -2 yaziniz" << nl;
     cout << "Kayip bonusu icin -3 yaziniz :(" << nl;
     cout << "Bu yazilarin kisa ozeti için -4 yaziniz" << nl;
     cout << "Oyundan cikmak icin -5 yaziniz" << nl;
-    cout << "Oyun kisa surede yazildigindan gecersiz girdiler girmeyi denemeyiniz" << nl;
-    cout << "Zaten elinize bu oyunu bozunca hicbir sey gecmicek aq" << nl;
-    cout << "Oyunun tek amaci Arda'ya ruletin asla kazandirmadigini gostermektir xd" << nl;
-    cout << "Dede elini bi kaldırsa offfff" << nl;
-    cout << "Oyunda 2 adet easter egg bulunmaktadir, bunlari, yapimcidan ogrenebilirsiniz" << nl;
-    cout << "Saatlerce ugrasip 500 satira yakin kod yazdim. Emegimin karsiligi icin bu oyunu bol bol oynayiniz :)" << nl;
     cout << nl << "Devam etmek için ENTERa basınız" << nl;
     waitfor;
     return;
